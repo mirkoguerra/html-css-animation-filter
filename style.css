@@ -78,9 +78,34 @@
 }
 .ex-10-icon {
     font-size: 60px;
+    animation-name: gira;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes gira {
+    0% {
+      transform: rotate(360deg);
+    }
 }
 .ex-11-icon {
     font-size: 60px;
+}
+.ex-11-icon:hover {
+  animation-name: giragira;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+@keyframes giragira {
+    0% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(270deg);
+    }
+    0% {
+      transform: rotate(0deg);
+    }
 }
 .ex-12-button, .ex-13-button {
     position: relative;
